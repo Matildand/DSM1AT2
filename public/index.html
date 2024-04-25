@@ -19,23 +19,39 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img src="img/cir.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id= "horror_element" src="img/HOR.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/FAN.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/FAR.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/COM.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/HIS.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/MAS.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/PIC.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/SCI.png" height="200" width="200"/></div>
+            <div class="image-container"><img src="img/PIC.png" height="200" width="200"/></div>
         </div>
         
     </body>
     
 </html>
+
+<script>
+    const blop_sound = document.createElement ("audio")
+    blop_sound.src = "sounds/blop_.mp3"
+    
+    const horror_element = document.getElementById ("HOR_id")
+    horror_element.onpointerover = () => {
+        horror_element.src = "img/FAN.png"
+    }
+    horror_element.onpointerout = () => {
+        horror_element.src = "img/HOR.png"
+    }
+    horror_element.onpointerdown = () => {
+        blop_sound.play ()
+    }
+</script>

@@ -19,21 +19,21 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id= "HOR_id" src="img/HOR.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/FAN.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/FAR.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="0_id" src="img/original/0.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="1_id" src="img/original/1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="2_id" src="img/original/2.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/COM.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/HIS.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/MAS.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="3_id" src="img/original/3.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="4_id" src="img/original/4.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="5_id" src="img/original/5.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/PIC.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/SCI.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/PIC.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="6_id" src="img/original/6.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="7_id" src="img/original/7.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="8_id" src="img/original/8.png" height="200" width="200"/></div>
         </div>
         
     </body>
@@ -41,18 +41,95 @@
 </html>
 
 <script>
-    const blop_sound = document.createElement ("audio")
-    blop_sound.src = "sounds/blop_.mp3"
-    
-    const horror_element = document.getElementById ("HOR_id")
-    horror_element.onpointerover = () => {
-        horror_element.src = "img/FAN.png"
+    //icon 0//
+    const zero_sound = document.createElement ("audio")
+    zero_sound.src = "sounds/0.mp3"
+
+    const zero_element = document.getElementById ("0_id")
+    zero_element.onpointerdown = () => {
+        zero_element.src = "img/changed/0.png"
+        zero_sound.play ()
+        setTimeout (() => { zero_element.src = "img/original/0.png" }, 2000)
     }
-    horror_element.onpointerout = () => {
-        horror_element.src = "img/HOR.png"
+    //icon 1//
+    const one_sound = document.createElement ("audio")
+    one_sound.src = "sounds/1.mp3"
+
+    const one_element = document.getElementById ("1_id")
+    one_element.onpointerdown = () => {
+        one_element.src = "img/changed/1.png"
+        one_sound.play ()
+        setTimeout (() => { one_element.src = "img/original/1.png" }, 2000)
     }
-    horror_element.onpointerdown = () => {
-        blop_sound.play ()
+    //icon 2//
+    const two_sound = document.createElement ("audio")
+    two_sound.src = "sounds/2.mp3"
+
+    const two_element = document.getElementById ("2_id")
+    two_element.onpointerdown = () => {
+        two_element.src = "img/changed/2.png"
+        two_sound.play ()
+        setTimeout (() => { two_element.src = "img/original/2.png" }, 2000)
+    } 
+    //icon 3//
+    const three_sound = document.createElement ("audio")
+    three_sound.src = "sounds/3.mp3"
+
+    const three_element = document.getElementById ("3_id")
+    three_element.onpointerdown = () => {
+        three_element.src = "img/changed/3.png"
+        three_sound.play ()
+        setTimeout (() => { three_element.src = "img/original/3.png" }, 2000)
+    }
+    //icon 4//
+    const four_sound = document.createElement ("audio")
+    four_sound.src = "sounds/4.mp3"
+
+    const four_element = document.getElementById ("4_id")
+    four_element.onpointerdown = () => {
+        four_element.src = "img/changed/4.png"
+        four_sound.play ()
+        setTimeout (() => { four_element.src = "img/original/4.png" }, 2000)
+    }
+    //icon 5//
+    const five_sound = document.createElement ("audio")
+    five_sound.src = "sounds/5.mp3"
+
+    const five_element = document.getElementById ("5_id")
+    five_element.onpointerdown = () => {
+        five_element.src = "img/changed/5.png"
+        five_sound.play ()
+        setTimeout (() => { five_element.src = "img/original/5.png" }, 2000)
+    }
+    //icon 6//
+    const six_sound = document.createElement ("audio")
+    six_sound.src = "sounds/6.mp3"
+
+    const six_element = document.getElementById ("6_id")
+    six_element.onpointerdown = () => {
+        six_element.src = "img/changed/6.png"
+        six_sound.play ()
+        setTimeout (() => { six_element.src = "img/original/6.png" }, 2000)
+    }
+    //icon 7//
+    const seven_sound = document.createElement ("audio")
+    seven_sound.src = "sounds/7.mp3"
+
+    const seven_element = document.getElementById ("7_id")
+    seven_element.onpointerdown = () => {
+        seven_element.src = "img/changed/7.png"
+        seven_sound.play ()
+        setTimeout (() => { seven_element.src = "img/original/7.png" }, 2000)
+    }
+    //icon 8//
+    const eight_sound = document.createElement ("audio")
+   eight_sound.src = "sounds/8.mp3"
+
+    const eight_element = document.getElementById ("8_id")
+    eight_element.onpointerdown = () => {
+        eight_element.src = "img/changed/8.png"
+        eight_sound.play ()
+        setTimeout (() => { eight_element.src = "img/original/8.png" }, 2000)
     }
     
 </script>
